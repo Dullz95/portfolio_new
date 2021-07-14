@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/2d04bbe871.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.0/fullpage.min.css"
+    />
+
+    <link rel="stylesheet" href="./styles.css" />
+
+    <title>Abdullah Isaacs portfolio</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul class="navbar-links">
+        <li class="navbar-link">
+          <a href="#home" onclick="close()" class="navbar-anchor"><i class="fas fa-home"></i> Home</a>
+        </li>
+        <li class="navbar-link">
+          <a href="#about" onclick="close()"class="navbar-anchor"
+            ><i class="fas fa-male"></i> About</a
+          >
+        </li>
+        <li class="navbar-link">
+          <a href="#resume" onclick="close()" class="navbar-anchor">
+            <i class="fas fa-id-card"></i> Resume</a
+          >
+        </li>
+        <li class="navbar-link">
+          <a href="#projects" onclick="close()" class="navbar-anchor"
+            ><i class="fas fa-briefcase"></i> Projects</a
+          >
+        </li>
+        <li class="navbar-link">
+          <a href="#testimonial" onclick="close()" class="navbar-anchor">
+            <i class="fas fa-user-friends"></i> Testimonials</a
+          >
+        </li>
+        <li class="navbar-link">
+          <a href="#contact" onclick="close()" class="navbar-anchor"
+            ><i class="fas fa-envelope"></i> Contact</a
+          >
+        </li>
+      </ul>
+      <button class="navbar-button" onclick="toggleNavbar()">
+        <i class="fab fa-autoprefixer"></i>
+      </button>
+    </nav>
+
+      <!-- home section -->
+      <div class="section">
+        <section class="home" id="home">
+          <div class="landing-page-content">
+            <img
+              src="./images/C8 Apr21 Abdullah Isaacs (1).JPG"
+              class="pic"
+              alt="image of me"
+            />
+            <h3 class="name">Abdullah Isaacs</h3>
+            <span class="title1">Aspiring Software developer</span>
+            <span class="title1"></span>
+            <span class="title1"></span>
+            <span class="title1"></span>
+          </div>
+        </section>
+      </div>
+      <!-- about section -->
+      <div class="section">
+        <div class="about" id="about">
+          <h1 class="abouth">about</h1>
+          <div class="about-top">
+            <img src="./images/me new.JPG" alt="Abdullah isaacs" class="me" />
+            <div class="about-content">
+              <div class="about-headings">
+                <h2 class="title">Aspiring web developer</h2>
+              </div>
+              <div class="both">
+                <p class="about-par">
+                  I am a person who loves taking on new
+                  <span>challenges</span> and <span>adventures.</span> I am also
+                  a very <span>social</span> person and love
+                  <span>interacting</span> with people from different
+                  <span>backgrounds</span>
+                  . I enjoy working in teams to achieve common
+                  <span>goals.</span> I feel that the
+                  <span>possibilities</span> are endless when different minds
+                  work together. My <span>passion</span> for Tech comes from a
+                  long-lasting <span>interest</span> in gaming as well as
+                  recently <span>understanding</span> the ins and outs (specs)
+                  of gaming PC's and Laptops. My introduction to understanding
+                  technology came in university while doing information systems.
+                </p>
+                <div class="about-contact">
+                  <ul>
+                    <li>name: <span>Abdullah Isaacs</span></li>
+                    <li>age: <span> 25</span></li>
+                    <li>email: <span>Abdullah.isaacs@gmail.com</span></li>
+                  </ul>
+                  <ul class="two">
+                    <li>phone: <span>0734425442</span></li>
+                    <li>location: <span>Cape Town</span></li>
+                    <li>availabillity: <span>Available</span></li>
+                  </ul>
+                </div>
+                <div class="skills">
+                  <h2 class="skill-headings">Skills:</h2>
+                  <ul class="skill1">
+                    <li><i class="fab fa-html5"></i></li>
+                    <li><i class="fab fa-css3-alt"></i></li>
+                    <li><i class="fab fa-js"></i></li>
+                    <li><i class="fab fa-python"></i></li>
+                  </ul>
+                </div>
+                <a
+                  href="./cv/Abdullah Isaacs CV - UPDATED 1.docx"
+                  class="button4"
+                  download
+                  >Download CV</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- resume section -->
+      <div class="section" id="resume">
+        
+          <h1 class="resume-heading">Resume</h1>
+          <div class ="above-res">
+            <button onclick="switchTab('work')" class="button6">work</button>
+            
+            <button onclick="switchTab('education')"class="button6">education</button>
+          </div>
+
+          <div class="resume-page">
+            <div id="education" class="resume-container">
+              <h2 class="resume-h2">Education</h2>
+              <div class="education">
+                <div class="resume-content">
+                  <h3>Islamia High School</h3>
+                  <h4>2013</h4>
+                  <p>Matriculted from highschool with a bachelors pass.</p>
+                </div>
+                <div class="resume-content">
+                  <h3>
+                    University of the Western Cape (bachelors of administration)
+                  </h3>
+                  <h4>2015-1019</h4>
+                  <p>
+                    Graduated  a bachelorsof administration. Majoring
+                    in business management and public administration
+                  </p>
+                </div>
+                <div class="resume-content">
+                  <h3>Helen Doron Teacher Training SHanghai</h3>
+                  <h4>2019</h4>
+                  <p>
+                    Teacher training completed fo kids aged between 4-10 years
+                    old. as well as class room management for kids aged between
+                    2-4 years.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div id="work" class="resume-container active">
+              <h2 class="resume-h2">Work experience</h2>
+              <div class="work-experience" data-aos="fade-right">
+                <div class="resume-content">
+                  <h3>Western Cape Government</h3>
+                  <h4>2014-2015</h4>
+                  <p>
+                    Pay intern at the department of cultural affairs and sport.
+                    Working in salary administration
+                  </p>
+                </div>
+                <div class="resume-content">
+                  <h3>Isilumko</h3>
+                  <h4>2015-2019</h4>
+                  <p>
+                    Started out as a promoter then got appointed as a site
+                    supervisor for promotional sites throughout university
+                  </p>
+                </div>
+                <div class="resume-content">
+                  <h3>Helen Doron English</h3>
+                  <h4>2019-2020</h4>
+                  <p>
+                    Foreign language instructor at Helen Doron. Xuzhou, Jiangsu
+                    province. China
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+      </div>
+      <!-- Project section -->
+      <div class="section">
+        <div id="projects">
+          <h1 class="proj-head">Projects</h1>
+          <div class="Project-container">
+            <div class="project-item">
+              <img
+                src="./images/sneak.png"
+                alt="form screenshot"
+                class="pic2"
+              />
+              <div class="details">
+                <h2>Sneaker Store</h2>
+                <h3>HTML/CSS/JavaScript</h3>
+                <p>April 2021</p>
+                <div class="button">
+                  <a href="https://github.com/Dullz95/sneaker">Github</a>
+                  <a href="https://app.netlify.com/teams/dullz95/overview"
+                    >LIVE</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="project-item">
+              <img
+                src="./images/sneak.png"
+                alt="form screenshot"
+                class="pic2"
+              />
+              <div class="details">
+                <h2>Sneaker Store</h2>
+                <h3>HTML/CSS/JavaScript</h3>
+                <p>April 2021</p>
+                <div class="button">
+                  <a href="https://github.com/Dullz95/sneaker">Github</a>
+                  <a href="https://app.netlify.com/teams/dullz95/overview"
+                    >LIVE</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="project-item">
+              <img
+                src="./images/sneak.png"
+                alt="form screenshot"
+                class="pic2"
+              />
+              <div class="details">
+                <h2>Sneaker Store</h2>
+                <h3>HTML/CSS/JavaScript</h3>
+                <p>April 2021</p>
+                <div class="button">
+                  <a href="https://github.com/Dullz95/sneaker">Github</a>
+                  <a href="https://app.netlify.com/teams/dullz95/overview"
+                    >LIVE</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="project-item">
+              <img
+                src="./images/sneak.png"
+                alt="form screenshot"
+                class="pic2"
+              />
+              <div class="details">
+                <h2>Sneaker Store</h2>
+                <h3>HTML/CSS/JavaScript</h3>
+                <p>April 2021</p>
+                <div class="button">
+                  <a href="https://github.com/Dullz95/sneaker">Github</a>
+                  <a href="https://app.netlify.com/teams/dullz95/overview"
+                    >LIVE</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="project-item">
+              <img
+                src="./images/portfolio.png"
+                alt="portfolio screenshot"
+                class="pic2"
+              />
+              <div class="details">
+                <h2>Portfolio</h2>
+                <h3>HTML/CSS/Javascript</h3>
+                <p>April 2021</p>
+                <div class="button">
+                  <a
+                    href="https://github.com/Dullz95/timeline/blob/main/index.html"
+                    >Github</a
+                  >
+                  <a href="https://tender-euler-82aeda.netlify.app">LIVE</a>
+                </div>
+              </div>
+            </div>
+            <div class="project-item">
+              <img
+                src="./images/testimonial.png"
+                alt="testimonnial screenshot"
+                class="pic2"
+              />
+              <div class="details">
+                <h2>Testimonial</h2>
+                <h3>HTML/CSS/Javascript</h3>
+                <p>April 2021</p>
+                <div class="button">
+                  <a href="https://github.com/Dullz95/sider">Github</a>
+                  <a href="https://sharp-yonath-da2127.netlify.app">LIVE</a>
+                </div>
+              </div>
+            </div>
+            <div class="project-item">
+              <img src="./images/bmi2.png" alt="form screenshot" class="pic2" />
+              <div class="details">
+                <h2>BMI calculator</h2>
+                <h3>Python</h3>
+                <p>April 2021</p>
+                <div class="button">
+                  <a href="#">Github</a>
+                  <a href="#">Replit</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section" id="testimonial">
+        <h1 class="test-mainhead">Testimonials</h1>
+        <div class="owl-carousel">
+          <div class="testimonial">
+            <div id="talkbubble">
+              <div class="test-content">
+                <img
+                  src="./images/jeandre.jpeg"
+                  class="test-pics"
+                  alt="testpic"
+                />
+                <div class="content-container">
+                  <h1>Jeandre Awood</h1>
+                  <h2>Web Developer</h2>
+                  <ul class="test-stars">
+                    <li><i class="fas fa-star"></i></li>
+                    <li><i class="fas fa-star"></i></li>
+                    <li><i class="fas fa-star"></i></li>
+                    <li><i class="fas fa-star"></i></li>
+                    <li><i class="fas fa-star"></i></li>
+                  </ul>
+                </div>
+              </div>
+              <q class="test-text">
+                Abdullah is an intelligent web developer. He is always the life
+                of the party and makes class bearable with his enthusiasm, jokes
+                and positive energy.</q
+              >
+            </div>
+          </div>
+          <div class="testimonial">
+            <div id="talkbubble">
+              <div class="test-content">
+                <img
+                  src="./images/2021-team-jason-wandrag.jpg"
+                  class="test-pics"
+                  alt="testpic"
+                />
+                <div class="content-container">
+                  <h1>Jason Wandrag</h1>
+                  <h2>Lecturer</h2>
+                  <ul class="test-stars">
+                    <li><i class="fas fa-star"></i></li>
+                    <li><i class="fas fa-star"></i></li>
+                    <li><i class="fas fa-star"></i></li>
+                    <li><i class="fas fa-star"></i></li>
+                    <li><i class="fas fa-star"></i></li>
+                  </ul>
+                </div>
+              </div>
+              <q class="test-text">
+                Abdullah is a motivated and talented individual. He is very
+                charismatic and hard working, which will carry him far into his
+                career.</q
+              >
+            </div>
+          </div>
+          <div class="testimonial">
+            <div id="talkbubble">
+              <div class="test-content">
+                <img
+                  src="./images/C8 Apr21 Jesse Terblanche (1).JPG"
+                  class="test-pics"
+                  alt="testpic"
+                />
+                <div class="content-container">
+                  <h1>Jesse Terblanche</h1>
+                  <h2>Web Developer</h2>
+                  <ul class="test-stars">
+                    <li><i class="fas fa-star"></i></li>
+                    <li><i class="fas fa-star"></i></li>
+                    <li><i class="fas fa-star"></i></li>
+                    <li><i class="fas fa-star"></i></li>
+                    <li><i class="fas fa-star"></i></li>
+                  </ul>
+                </div>
+              </div>
+              <q class="test-text"
+                >Abdullah Isaacs is an intelligent and fast learner. He works
+                well under pressure and makes sure to deliver his best work at
+                all times.</q
+              >
+            </div>
+          </div>
+          <div class="testimonial">
+            <div id="talkbubble">
+              <div class="test-content">
+                <img
+                  src="./images/C8 Apr21 Justin Calvert (3).JPG"
+                  class="test-pics"
+                  alt="testpic"
+                />
+                <div class="content-container">
+                  <h1>Justin Calvert</h1>
+                  <h2>Web Developer</h2>
+                  <ul class="test-stars">
+                    <li><i class="fas fa-star"></i></li>
+                    <li><i class="fas fa-star"></i></li>
+                    <li><i class="fas fa-star"></i></li>
+                    <li><i class="fas fa-star"></i></li>
+                    <li><i class="fas fa-star"></i></li>
+                  </ul>
+                </div>
+              </div>
+              <q class="test-text"
+                >Abdullah is an extremely hardworking individual. He is always
+                willing to offer advice and always gives his honest opinion.He will be an asset to any company one day.</q
+              >
+            </div>
+          </div>
+          <div class="testimonial">
+            <div id="talkbubble">
+              <div class="test-content">
+                <img
+                  src="./images/C8 Apr21 Mzwandile Stuurman (1).JPG"
+                  class="test-pics"
+                  alt="testpic"
+                />
+                <div class="content-container">
+                  <h1>Mzwandile Stuur</h1>
+                  <h2>Web Developer</h2>
+                  <ul class="test-stars">
+                    <li><i class="fas fa-star"></i></li>
+                    <li><i class="fas fa-star"></i></li>
+                    <li><i class="fas fa-star"></i></li>
+                    <li><i class="fas fa-star"></i></li>
+                    <li><i class="fas fa-star"></i></li>
+                  </ul>
+                </div>
+              </div>
+              <q class="test-text">
+                Abdullah is hardworking and very easy to work with. Whats
+                outstanding about him is that he is always offering to help
+                those who need it.
+              </q>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Contact section -->
+      <div class="section" id="contact">
+        <h2 class="contact-heading">Contact me</h2>
+        <div class="contact-info">
+          <div class="get-in-touch">
+            <h2>Get in touch</h2>
+        
+            <ul class="get-in-touch-list">
+              <li>Phone <span class="bottom"> +(27)734425442</span></li>
+              <li>
+                location <span class="bottom">Cape Town, Western Cape. SA</span>
+              </li>
+              <li>
+                Email<span class="bottom">Abdullah.isaacs@gmail.com</span>
+              </li>
+              <li>Follow:</li>
+            </ul>
+            <div class="icons">
+              <ul class="icons-list">
+                <li>
+                  <a href="https://github.com/Dullz95" target="_blank"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/abdullah-isaacs-614296206/"
+                    target="_blank"
+                    ><i class="fab fa-linkedin-in"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/?lang=en"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <form
+            class="contact-form"
+            action="https://formspree.io/f/mpzkpqzj"
+            method="POST"
+          >
+            <input
+              class="contact-input"
+              type="text"
+              name="full_name"
+              id="full_name"
+              placeholder="Name"
+              required
+            />
+
+            <input
+              class="contact-input"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email"
+              required
+            />
+            <textarea
+              class="contact-input"
+              name="message"
+              id="message"
+              placeholder="Type your message here"
+            ></textarea>
+            <button class="button3" type="submit">Send Message</button>
+          </form>
+        </div>
+        <iframe
+          class="map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7868.816641372693!2d18.5052925501792!3d-33.98149109660848!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc500f8826eed7%3A0x687fe1fc2828aa87!2sCape%20Town!5e0!3m2!1sen!2sza!4v1620814132331!5m2!1sen!2sza"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
+    <!-- <div class="footer">
+      <div class="footer-content">
+        <p>Abdullah.isaacs@gmail.com</p>
+      </div>
+    </div> -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+      integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.0/fullpage.min.js"></script>
+
+    <script src="./scripts.js"></script>
+  </body>
+</html>
