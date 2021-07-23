@@ -696,6 +696,7 @@ body {
 @media (max-width: 1300px) {
   .section {
     font-size: 15px;
+    margin: 55px;
   }
   /* navnar */
   .navbar-links {
@@ -766,7 +767,7 @@ body {
     font-size: 13px;
   }
   ul.skill1 {
-    gap: 40px;
+    gap: 15px;
   }
   h2.skill-headings {
     font-size: 20px;
@@ -786,7 +787,7 @@ body {
     font-size: 20px;
   }
   .resume-container {
-    width: 50%;
+    width: auto;
   }
   .resume-content {
     padding-top: 10px;
@@ -823,6 +824,11 @@ body {
     overflow-x: scroll;
     max-width: 100vw;
     margin: 0 auto;
+    width: 100%;
+  }
+  #talkbubble{
+    margin-top: 10px;
+    margin-left: 20px;
   }
   h1.test-mainhead {
     font-size: 20px;
@@ -862,8 +868,8 @@ body {
     width: 100%;
   }
   .button6 {
-    width: 25%;
-    font-size: 13px;
+    width: 33%;
+    font-size: 10px;
   }
   .skill1 {
     font-size: 16px;

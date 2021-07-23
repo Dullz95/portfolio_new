@@ -44,6 +44,10 @@ $(document).ready(function () {
     responsive: {
       0: {
         items: 1,
+        margin:0,
+        stagePadding:0,
+        
+    
         // nav:true
       },
       1000: {
