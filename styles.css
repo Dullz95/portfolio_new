@@ -30,13 +30,13 @@ body {
   border-left: 4px solid #f5ae51; 
   border-right: 4px solid #f5ae51; 
   border-radius: 10px;
-  margin: 60px;
+  margin: 70px;
 }
 
 .pic {
   border-radius: 50%;
-  width: 7vw;
-  height: 13.5vh;
+  width: 10vw;
+  height: 20.5vh;
   outline: white;
   border: 4px solid white;
   object-fit: cover;
@@ -89,7 +89,7 @@ body {
   position: absolute;
   font-weight: 600;
   width: 100%;
-  top: 410px;
+  top: 450px;
   text-align: center;
   transform: translate3d(0, -200px, 0);
   animation: 2s bounced-word infinite;
