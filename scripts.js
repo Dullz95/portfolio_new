@@ -46,8 +46,6 @@ $(document).ready(function () {
         items: 1,
         margin:0,
         stagePadding:0,
-        
-    
         // nav:true
       },
       1000: {
