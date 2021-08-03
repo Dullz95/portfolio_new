@@ -414,6 +414,17 @@ body {
   overflow: hidden;
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
 }
+.wordp{
+  width: 100%;
+  min-width: 300px;
+  border-radius: 10px;
+  border: none;
+
+  object-fit: cover;
+  overflow: hidden;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+
+}
 .details {
   /* padding-bottom: 15%; */
 }
