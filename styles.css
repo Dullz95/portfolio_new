@@ -391,6 +391,7 @@ body {
   margin-right: 9%;
   gap: 10px;
   margin-bottom: 3%;
+  overflow-x: hidden;
 }
 
 .project-item {
